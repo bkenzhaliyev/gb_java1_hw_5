@@ -17,11 +17,21 @@ public class Person {
         this.age = age;
     }
 
-    public void info(){
-        System.out.printf("%-25s %-25s %-25s %-20s %10s %10s \n", name, position, mail, phoneNum, salary, age);
+    public void info(int num){
+        System.out.printf("%3s  %-25s %-25s %-25s %-20s %10s %10s \n", num, name, position, mail, phoneNum, salary, age);
     }
 
     public int getAge() {
         return age;
     }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
 }
+
